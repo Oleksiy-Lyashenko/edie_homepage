@@ -191,7 +191,7 @@ function App() {
             <div className="clients__info">
               <p className="clients__subtitle">Meet the team</p>
 
-              <h2 className="content__title content__title--clients">
+              <h2 className="content__title clients__title">
                 We are chilled <br /> and a laidback <br /> team
               </h2>
 
