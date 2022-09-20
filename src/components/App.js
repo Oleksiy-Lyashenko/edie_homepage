@@ -1,3 +1,8 @@
+import { BiMenu } from 'react-icons/bi';
+import { AiOutlineClose } from 'react-icons/ai';
+import { Link } from 'react-scroll';
+import classNames from 'classnames';
+
 import headerImg from './assets/heroImage.jpg';
 
 import pencil from './assets/icons/pencil.svg';
@@ -18,11 +23,18 @@ import author from './assets/person4.png';
 import instagram from './assets/instagram.svg';
 import linkedin from './assets/linkedin.svg';
 import twitter from './assets/twitter.svg';
+import { useState } from 'react';
 
 function App() {
+  const [menu, setMenu] = useState(false);
+
+  const closeMenu = () => {
+    setMenu(false);
+  }
+
   return (
     <div className="page">
-      <header className="header page--margin">
+      <header className="header page--margin" id="home">
         <div className="wrapper">
           <div className="header__content">
             <div className="menu">
@@ -32,31 +44,132 @@ function App() {
 
               <ul className="menu__list">
                 <li className="menu__item">
-                  <a href="/" className="menu__link">
+                  <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="menu__link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu__item">
-                  <a href="/" className="menu__link">
+                  <Link
+                    to="services"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="menu__link">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu__item">
-                  <a href="/" className="menu__link">
+                  <Link
+                    to="out-works"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="menu__link">
                     Out Works
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu__item">
-                  <a href="/" className="menu__link">
+                  <Link
+                    to="clients"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="menu__link">
                     Clients
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu__item">
-                  <a href="/" className="menu__link">
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="menu__link">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
+
+              <div className="burger-menu" onClick={() => setMenu(true)}>
+                <BiMenu size="40px" />
+              </div>
+
+              <nav className={classNames('nav', { nav__open: menu })}>
+                <AiOutlineClose size="40px" className="nav__close" onClick={closeMenu} />
+
+                <ul className="menu__list nav__list">
+                  <li className="menu__item">
+                    <Link
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      className="menu__link nav__link"
+                      onClick={closeMenu}>
+                      Home
+                    </Link>
+                  </li>
+                  <li className="menu__item">
+                    <Link
+                      to="services"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      className="menu__link nav__link"
+                      onClick={closeMenu}>
+                      Services
+                    </Link>
+                  </li>
+                  <li className="menu__item">
+                    <Link
+                      to="out-works"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      className="menu__link nav__link"
+                      onClick={closeMenu}>
+                      Out Works
+                    </Link>
+                  </li>
+                  <li className="menu__item">
+                    <Link
+                      to="clients"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      className="menu__link nav__link"
+                      onClick={closeMenu}>
+                      Clients
+                    </Link>
+                  </li>
+                  <li className="menu__item">
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      className="menu__link nav__link"
+                      onClick={closeMenu}>
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </div>
 
             <div className="header__margin">
@@ -95,10 +208,10 @@ function App() {
         </div>
       </header>
 
-      <div className="content">
+      <div className="content" id="services">
         <div className="wrapper wrapper--content">
           <div className="services page--margin">
-            <h2 className="content__title">
+            <h2 className="content__title" id="home">
               We offer high <br /> demand services{' '}
             </h2>
 
@@ -148,7 +261,7 @@ function App() {
             </div>
           </div>
 
-          <div className="out-works page--margin">
+          <div className="out-works page--margin" id="out-works">
             <h2 className="content__title">
               Good design means <br /> good business
             </h2>
@@ -187,7 +300,7 @@ function App() {
             <button className="out-works__button">see more &rarr;</button>
           </div>
 
-          <div className="clients page--margin">
+          <div className="clients page--margin" id="clients">
             <div className="clients__info">
               <p className="clients__subtitle">Meet the team</p>
 
@@ -236,7 +349,7 @@ function App() {
         </div>
       </div>
 
-      <footer className="footer">
+      <footer className="footer" id="contact">
         <div className="wrapper wrapper--content">
           <div className="footer__body">
             <div className="footer__nav">
