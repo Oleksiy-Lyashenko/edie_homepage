@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/edie_homepage/static/css/main.908cd57c.css",
+    "main.js": "/edie_homepage/static/js/main.5c65c4bb.js",
+    "static/js/787.dbfbb04a.chunk.js": "/edie_homepage/static/js/787.dbfbb04a.chunk.js",
+    "static/media/heroImage.jpg": "/edie_homepage/static/media/heroImage.0131c65cf725a6bd1fe1.jpg",
+    "static/media/onboard.png": "/edie_homepage/static/media/onboard.3127395c644187e4ac61.png",
+    "static/media/booking.png": "/edie_homepage/static/media/booking.5fabb303e148404da65c.png",
+    "static/media/smarthome.jpg": "/edie_homepage/static/media/smarthome.deca3c42a33ee416ff13.jpg",
+    "static/media/juice-product.png": "/edie_homepage/static/media/juice-product.7dd02c6931855a34612b.png",
+    "static/media/person3.png": "/edie_homepage/static/media/person3.e332a62f0c9077144bcb.png",
+    "static/media/person1.png": "/edie_homepage/static/media/person1.6336d958523d7dafde6d.png",
+    "static/media/person2.png": "/edie_homepage/static/media/person2.89a1b6c97c35b39be5f8.png",
+    "static/media/person4.png": "/edie_homepage/static/media/person4.ed00c31f4dd34829f204.png",
+    "static/media/instagram.svg": "/edie_homepage/static/media/instagram.3a77afb49f6b59c1bf9e666858bf226b.svg",
+    "static/media/twitter.svg": "/edie_homepage/static/media/twitter.da287da42af40d5ec91687509ecf0c6c.svg",
+    "static/media/linkedin.svg": "/edie_homepage/static/media/linkedin.77c48525713dbb23c2411c10bc34e2a3.svg",
+    "index.html": "/edie_homepage/index.html",
+    "static/media/pencil.svg": "/edie_homepage/static/media/pencil.d359f8658b7278109a7bcffcf8809073.svg",
+    "static/media/brackets.svg": "/edie_homepage/static/media/brackets.146172754c6d33a37de3f4ad0e5a5cf6.svg",
+    "static/media/storage.svg": "/edie_homepage/static/media/storage.7d03dd839309c59446e4edc3ae9cfe10.svg",
+    "main.908cd57c.css.map": "/edie_homepage/static/css/main.908cd57c.css.map",
+    "main.5c65c4bb.js.map": "/edie_homepage/static/js/main.5c65c4bb.js.map",
+    "787.dbfbb04a.chunk.js.map": "/edie_homepage/static/js/787.dbfbb04a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.908cd57c.css",
+    "static/js/main.5c65c4bb.js"
+  ]
+}
